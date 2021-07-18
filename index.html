@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive tour and travel agency website design tutorial</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#hem" class="logo"><span>V</span>irginias Tours</a>
+
+    <nav class="navbar">
+        <a href="#hem">Hem</a>
+        <a href="#boka">Boka</a>
+        <a href="#packages">packages</a>
+        <a href="#tjänster">Tjänster</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#recension">review</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
+
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+    <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="Sök här...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- login form container  -->
+
+<div class="login-form-container">
+
+    <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="Skriv ditt mejl">
+        <input type="password" class="box" placeholder="Skriv ditt lösenord">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Kom ihåg mig</label>
+        <p>Glömt lösenordet? <a href="#">Klicka här</a></p>
+        <p>Saknar du ett konto? <a href="#">Registrera dig</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home" id="hem">
+
+    <div class="content">
+        <h3>Äventyr är överallt</h3>
+        <p>Upptäck nya platser hos oss, äventyr väntar</p>
+        <a href="#" class="btn">Upptäck mer</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="bilder/vid-5.mp4"></span>
+        <span class="vid-btn" data-src="bilder/River.mp4"></span>
+        <span class="vid-btn" data-src="bilder/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="bilder/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="bilder/Mountain.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="bilder/vid-5.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- book section starts  -->
+
+<section class="book" id="boka">
+
+    <h1 class="heading">
+        <span>B</span>
+        <span>o</span>
+        <span>K</span>
+        <span>A</span>
+        <span class="space"></span>
+        <span>N</span>
+        <span>U</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="bilder/stockholm-1191953_640.jpg" alt="slott">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <h3>Vart vill du åka</h3>
+                <input type="text" placeholder="Namn">
+            </div>
+            <div class="inputBox">
+                <h3>Hur många</h3>
+                <input type="number" placeholder="Antal personer">
+            </div>
+            <div class="inputBox">
+                <h3>Datum</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="boka nu">
+        </form>
+
+    </div>
+
+</section>
+
+<!-- book section ends -->
+
+<!-- packages section starts -->
+
+<section class="packages" id="packages">
+
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="bilder/tyska-kyrka-4665295_640.jpg" alt="kyrka">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Tyska kyrka </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#boka" class="btn">Boka</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="bilder/stockholm-438231_640.jpg" alt="slussen">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Slussen </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#boka" class="btn">Boka</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="bilder/stockholm-2971339_640.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hötorget </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#boka" class="btn">Boka</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="bilder/stockholm-1191953_640.jpg" alt="hamnen">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Stockholm </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#boka" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="bilder/royal-palace-377913_640.jpg" alt="kungliga_slott">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Kungliga slottet </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#boka" class="btn">Boka</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="bilder/hut-455785_640.jpg" alt="skansen">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Skansen </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#boka" class="btn">Boka</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- packages section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="tjänster">
+
+    <h1 class="heading">
+        <span>T</span>
+        <span>j</span>
+        <span>ä</span>
+        <span>n</span>
+        <span>s</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+            <h3>Tillgängliga Hotell</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Mat and dryck</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+            <h3>Safty guide</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+            <h3>Snabbaste resa</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>Äventyrer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore commodi earum, quis voluptate exercitationem ut minima itaque iusto ipsum corrupti!</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading">
+        <span>G</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="bilder/pexels-ali-atakan-açıkbaş.jpg" alt="sthlm-1">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-michael-erhardsson-5200120.jpg" alt="sthlm-2">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-nextvoyage-3779783.jpg" alt="sthlm-3">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-olenka-sergienko-3646171.jpg" alt="sthlm-4">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-pixabay-33612.jpg" alt="sthlm-5">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-pixabay-39378.jpg" alt="sthlm-6">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-pixabay-208755.jpg" alt="sthlm-7">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-tushar-mahajan-6929733.jpg" alt="sthlm-8">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="bilder/pexels-vicente-viana-martínez-2377432.jpg" alt="sthlm-9">
+            <div class="content">
+                <h3>Underbara platser</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <a href="#" class="btn">Se mer</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="recension">
+
+    <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>c</span>
+        <span>e</span>
+        <span>n</span>
+        <span>s</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>
+
+    </h1>
+
+    <div class="swiper-container review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="bilder/pic1.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="bilder/pic2.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="bilder/pic3.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="bilder/pic4.png" alt="">
+                    <h3>john deo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="kontakt">
+    
+    <h1 class="heading">
+        <span>K</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>K</span>
+        <span>t</span>
+    </h1>
+
+    <div class="row">
+
+        <div class="image">
+            <img src="bilder/stockholm-438231_640.jpg" alt="">
+        </div>
+
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="Namn">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="Nummer">
+                <input type="text" placeholder="Ämne">
+            </div>
+            <textarea placeholder="Meddelande" name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Skicka meddelande">
+        </form>
+
+    </div>
+    
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section 
+    
+    <section class="brand-container">
+
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+    </div>
+
+</section>-->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Om oss</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+        <div class="box">
+            <h3>Våra Områden</h3>
+            <a href="https://start.stockholm/" target="_blank">Stockholm</a>
+            <a href="https://www.lonelyplanet.com/italy/rome" target="_blank">Rom</a>
+            <a href="https://visitlondon.com/" target="_blank">London</a>
+            <a href="https://www.esmadrid.com/en" target="_blank">Madrid</a>
+        </div>
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#hem">hem</a>
+            <a href="#boka">Boka</a>
+            <a href="#packages">packages</a>
+            <a href="#tjänster">Tjänster</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#recension">Recension</a>
+            <a href="#kontakt">Kontakt</a>
+        </div>
+        <div class="box">
+            <h3>Följ oss</h3>
+            <a href="https://sv-se.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+            <a href="https://se.linkedin.com/" target="_blank">Linkedin</a>
+        </div>
+
+    </div>
+
+    <h1 class="credit"> <span>Copyright@2021 Virginias Tourism </span> | all rights reserved! </h1>
+
+</section>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
